@@ -1,4 +1,6 @@
-Code for the Porto Seguro’s Safe Driver Prediction. The challenge is about predicting if a driver will file an insurance claim next year.
+Code for the Porto Seguro’s Safe Driver Prediction challenge on Kaggle.
+
+This challenge is about predicting if a driver will file an insurance claim next year.
 
 #### Description
 
