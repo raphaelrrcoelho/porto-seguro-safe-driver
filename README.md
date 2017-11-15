@@ -22,3 +22,13 @@ In the train and test data, features that belong to similar groupings are tagged
 - test.csv contains the test data.
 - sample_submission.csv is submission file showing the correct format.
 
+#### Requirements
+
+All but one requirements are in the requirements.txt file. You can create a conda environment from it by running
+```
+$ conca create --name <name> --file requirements.txt
+```
+However, you will need to install missingo from a custom repository since it's not on Anaconda's official one. To do so, run:
+```
+conda install -c conda-forge missingno
+```
