@@ -1,4 +1,4 @@
-def plot_histograms(df , variables , n_rows , n_cols):
+def histograms(df , variables , n_rows , n_cols):
     fig = plt.figure(figsize = (16, 12 ))
     for i, var_name in enumerate(variables):
         ax=fig.add_subplot(n_rows, n_cols, i + 1)
@@ -10,7 +10,7 @@ def plot_histograms(df , variables , n_rows , n_cols):
     fig.tight_layout()  # Improves appearance a bit.
     plt.show()
 
-def plot_distribution(df, var, target, **kwargs):
+def distribution(df, var, target, **kwargs):
     row = kwargs.get('row', None)
     col = kwargs.get('col', None)
     facet = sns.FacetGrid(df, hue=target, aspect=4, row = row, col = col)
@@ -18,7 +18,7 @@ def plot_distribution(df, var, target, **kwargs):
     facet.set(xlim=(0 , df[var].max()))
     facet.add_legend()
 
-def plot_categories(df, cat, target, **kwargs):
+def categories(df, cat, target, **kwargs):
     row = kwargs.get('row', None)
     col = kwargs.get('col', None)
     facet = sns.FacetGrid(df, row = row, col = col)
