@@ -1,4 +1,4 @@
-def histograms(df , variables , n_rows , n_cols):
+def histograms(df, variables, n_rows, n_cols):
     fig = plt.figure(figsize = (16, 12 ))
     for i, var_name in enumerate(variables):
         ax=fig.add_subplot(n_rows, n_cols, i + 1)
