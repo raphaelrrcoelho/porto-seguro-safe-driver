@@ -1,3 +1,5 @@
+import pandas as pd
+
 def get_feature_importance_df(feature_importances, column_names, top_n = 25):
     """Get feature importance data frame.
  

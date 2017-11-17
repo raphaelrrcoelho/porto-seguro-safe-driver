@@ -1,3 +1,7 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+
 def histograms(df, variables, n_rows, n_cols):
     fig = plt.figure(figsize = (16, 12 ))
     for i, var_name in enumerate(variables):
