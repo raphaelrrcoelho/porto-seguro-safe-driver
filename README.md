@@ -30,5 +30,9 @@ $ conca create --name <name> --file requirements.txt
 ```
 However, you will need to install missingo from a custom repository since it's not on Anaconda's official one. To do so, run:
 ```
-conda install -c conda-forge missingno
+conda install -c conda-forge missingno xgboost lightgbm
+```
+Then run
+```
+pip install catboost
 ```
